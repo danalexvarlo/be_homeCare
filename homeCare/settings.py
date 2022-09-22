@@ -102,10 +102,10 @@ WSGI_APPLICATION = 'homeCare.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'da92lrqsdaaajs',
-        'USER': 'qodfrusgmzrair',
-        'PASSWORD': '1ca8615cfc486d3bbd5e6d74c070903415bb6b5d02f22c9064407029849a5224',
-        'HOST': 'ec2-3-224-184-9.compute-1.amazonaws.com',
+        'NAME': 'dbdj1v6dm7iuef',
+        'USER': 'sojekzdvwfkclw',
+        'PASSWORD': 'efb6aa900e7d7ddbdfb6ce611915cf1e5f008303331101d85c8b5c38cd402d34',
+        'HOST': 'ec2-52-201-124-168.compute-1.amazonaws.com',
         'PORT': '5432',
     }
 }
