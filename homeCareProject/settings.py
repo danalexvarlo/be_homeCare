@@ -101,7 +101,7 @@ WSGI_APPLICATION = 'homeCareProject.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'dbdj1v6dm7iuef',
         'USER': 'sojekzdvwfkclw',
         'PASSWORD': 'efb6aa900e7d7ddbdfb6ce611915cf1e5f008303331101d85c8b5c38cd402d34',
