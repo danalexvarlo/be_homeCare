@@ -73,6 +73,8 @@ REST_FRAMEWORK = {
     )
 }
 
+AUTH_USER_MODEL = 'homeCareApp.Persona'
+
 ROOT_URLCONF = 'homeCareProject.urls'
 
 TEMPLATES = [
