@@ -10,6 +10,6 @@ class Paciente(models.Model):
     medico = models.ForeignKey(Medico, related_name = 'paciente', on_delete = models.CASCADE)
     direccion = models.CharField('Direccion', max_length = 50)
     telefono = models.CharField('Telefono', max_length = 20)
-    latitud = models.DecimalField('Latitud', max_digits = 45 )
-    longitud = models.DecimalField('Longitud', max_digits = 45)
+    latitud = models.DecimalField('Latitud', max_digits = 10, decimal_places = 3)
+    longitud = models.DecimalField('Longitud', max_digits = 10, decimal_places = 3)
     id_familiar = models.ForeignKey(Familiar, related_name = 'paciente', on_delete = models.CASCADE)

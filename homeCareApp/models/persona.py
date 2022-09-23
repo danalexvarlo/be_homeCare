@@ -21,7 +21,7 @@ class UserManager(BaseUserManager):
 
 class Persona(AbstractBaseUser, PermissionsMixin):
     id = models.BigAutoField(primary_key = True)
-    usuario = models.CharField('Username', max_length = 15, unique = True)
+    usuario = models.CharField('Usuario', max_length = 15, unique = True)
     nombre = models.CharField('Nombre', max_length = 30)
     apellido = models.CharField('Apellido', max_length = 60)
 
@@ -31,4 +31,4 @@ class Persona(AbstractBaseUser, PermissionsMixin):
         super().save(**kwargs)
         
     objects = UserManager()
-    USERNAME_FIELD = 'username'
+    USERNAME_FIELD = 'usuario'

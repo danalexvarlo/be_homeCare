@@ -1,5 +1,5 @@
 from django.db import models
-from persona import Persona
+from .persona import Persona
 
 class Medico(models.Model):
     id_medico = models.AutoField(primary_key = True)
