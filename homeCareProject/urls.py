@@ -15,7 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from homeCareApp import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('user/', views.PersonaListView.as_view()),
+    path('user/<int:pk>', views.PersonaRetrieveUpdateDeleteView.as_view()),
+    path('medico/', views.MedicoListCreateView.as_view()),  
+    path('medico/<int:pk>/', views.MedicoRetrieveUpdateView.as_view()),
 ]

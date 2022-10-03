@@ -24,6 +24,7 @@ class Persona(AbstractBaseUser, PermissionsMixin):
     usuario = models.CharField('Usuario', max_length = 15, unique = True)
     nombre = models.CharField('Nombre', max_length = 30)
     apellido = models.CharField('Apellido', max_length = 60)
+    rol = models.CharField('Rol', max_length = 20)
 
     def save(self, **kwargs):
         some_salt = 'mMUj0DrIK6vgtdIYepkIxN'
