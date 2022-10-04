@@ -23,4 +23,6 @@ urlpatterns = [
     path('user/<int:pk>', views.PersonaRetrieveUpdateDeleteView.as_view()),
     path('medico/', views.MedicoListCreateView.as_view()),  
     path('medico/<int:pk>/', views.MedicoRetrieveUpdateView.as_view()),
+    path('paciente/', views.PacienteListCreateView.as_view()),  
+    path('paciente/<int:pk>/', views.PacienteRetrieveUpdateView.as_view()),
 ]

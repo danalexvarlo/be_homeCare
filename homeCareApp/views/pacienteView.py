@@ -7,7 +7,7 @@ from homeCareApp.serializers.PacienteSerializer import PacienteSerializer
 from homeCareApp.serializers.personaSerializer import PersonaSerializer
 from rest_framework.decorators import api_view
 
-class MedicoListCreateView(generics.ListCreateAPIView):
+class PacienteListCreateView(generics.ListCreateAPIView):
     queryset = Paciente.objects.all()
     serializer_class = PacienteSerializer
     #permission_classes = (IsAuthenticated,)
@@ -39,7 +39,7 @@ class MedicoListCreateView(generics.ListCreateAPIView):
         tokenSerializer.is_valid(raise_exception=True)
         return Response(tokenSerializer.validated_data, status=status.HTTP_201_CREATED) """
 
-class MedicoRetrieveUpdateView(generics.RetrieveUpdateAPIView):
+class PacienteRetrieveUpdateView(generics.RetrieveUpdateAPIView):
     queryset = Paciente.objects.all()
     serializer_class = PacienteSerializer
     lookup_field = "id"             # campo con el que se realiza la búsqueda de los objetos
