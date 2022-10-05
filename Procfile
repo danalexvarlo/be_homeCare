@@ -1,2 +1,1 @@
-web: gunicorn homeCareApp.wsgi 
-web: gunicorn dep:app
+web: gunicorn homeCareApp.wsgi
