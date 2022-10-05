@@ -1,1 +1,1 @@
-web:gunicorn homeCareProject.wsgi
+web: gunicorn homeCareProject.wsgi
